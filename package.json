@@ -1,0 +1,21 @@
+{
+  "name": "genes.css",
+  "version": "0.0.0",
+  "description": "A javascript tool for generating functional css.",
+  "homepage": "https://genescss.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genescss/genes.css.git"
+  },
+  "author": "Paula Griguță <paula.la@live.com>",
+  "license": "MIT",
+  "main": "genes.js",
+  "bin": {
+    "genes": "./bin/genes"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "css.escape": "^1.5.1",
+    "css.of": "^1.0.0"
+  }
+}

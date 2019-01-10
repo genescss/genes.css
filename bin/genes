@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const cmd   = require('commander');
+const pkg   = require('../package.json');
+const genes = require('../genes.js');
+
+cmd.version(pkg.version);
+
+cmd
+  .option('-s, --source <source>', 'source path')
+  .option('-o, --output <output>', 'output path')
+  .option('-c, --config <config>', 'config file');
+
+cmd.parse(process.argv);
+
+genes.css(cmd.source, cmd.output, cmd.config);
